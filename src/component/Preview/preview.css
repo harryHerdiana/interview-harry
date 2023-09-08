@@ -1,0 +1,39 @@
+.preview-card{
+    margin-left: 24px;
+    background-color: white;
+    padding: 20px;
+}
+
+.preview-card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview-card-header-contact{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.preview-map{
+    height: 457px;
+    margin-top: 24px;
+}
+.desktop-image{
+    display: block;
+}
+.mobile-image{
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .preview-card-header{
+        flex-direction: column-reverse;
+    }
+    .desktop-image{
+        display: none;
+    }
+    .mobile-image{
+        display: block;
+    }
+  }

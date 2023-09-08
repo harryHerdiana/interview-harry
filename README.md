@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React Interview using Hasura, GraphQL, Apollo
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -39,8 +39,15 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Hasura Project Setup
+This app's data is using Hasura as a provider. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Table are created with the name "rooms_item" and consist of several fields:
+![Alt text](image.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The data fetched using GraphQL and Apollo to the react app: ![Alt text](image-1.png)
+
+and we create a query on the component that needed the props:
+
+![Alt text](image-2.png)
+

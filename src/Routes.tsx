@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 
-import BookingPageComponent from "./component/BookingPage/BookingPage";
+import BookingPageComponent from "./page/BookingPage/BookingPage";
 
 const RoutesComponent = () => {
   return (

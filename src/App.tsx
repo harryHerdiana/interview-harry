@@ -7,18 +7,10 @@ import {
   HttpLink,
 } from "@apollo/client";
 import RoutesComponent from "./Routes";
+import Header from "./component/Header/Header";
 
-const GET_EXAMPLE = gql`
-  query MyQuery {
-    example_table {
-      id
-      name
-    }
-  }
-`;
 
 function App() {
-
   const createApolloClient = () => {
     return new ApolloClient({
       link: new HttpLink({
@@ -36,7 +28,8 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-    <RoutesComponent/>
+      <Header />
+      <RoutesComponent />
     </ApolloProvider>
   );
 }
